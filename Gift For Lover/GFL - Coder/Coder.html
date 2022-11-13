@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Image-Video/Icon/icon-web-coder.png">
+    <link href="./CoderStyles.css" rel="stylesheet">
+    <script language="javascript" src="./CoderJS.js"></script>
+    <title>Coder</title>
+    <style>
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <script type="text/javascript">
+        //<=!=[=C=D=A=T=A=[
+
+        function contentprotector() {
+            return false;
+        }
+
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton === 2) || (eventbutton === 3))
+                return false;
+        }
+        document.oncontextmenu = contentprotector;
+        document.onmouseup = contentprotector;
+        var isCtrl = false;
+        window.onkeyup = function(e) {
+            if (e.which === 17)
+                isCtrl = false;
+        }
+        window.onkeydown = function(e) {
+            if (e.which === 17)
+                isCtrl = true;
+            if (((e.which === 85) || (e.which === 65) || (e.which === 88) || (e.which === 67) || (e.which === 86) || (e.which === 83)) && isCtrl === true) {
+                return false;
+            }
+        }
+        isCtrl = false;
+        document.ondragstart = contentprotector;
+        //]=]=>
+    </script>
+</head>
+
+<body>
+    <div class="div-display-loading" id="display-loading">
+        <span class="loader"></span>
+    </div>
+    <div class="div-total-web" id="total-web">
+        <div class="div" id="head-web">
+            <div class="div" id="div-text">
+                <h1 id="text-head-web">Coder</h1>
+            </div>
+        </div>
+        <div class="div" id="body-web">
+            <div class="div" id="khung">
+                <div class="div" id="khung-app">
+                    <div class="div" id="khung-fb" onclick="FbCoder()">
+                        <img src="../Image-Video/Coder/Fb-Coder.png" class="img-coder" id="fb-img">
+                        <span class="text">Facebook</span>
+                    </div>
+                    <div class="div" id="khung-discord" onclick="DiscordCoder()">
+                        <img src="../Image-Video/Coder/Dis-Coder.png" class="img-coder" id="discord-img">
+                        <span class="text">Discord</span>
+                    </div>
+                    <div class="div" id="khung-gmail" onclick="GmailCoder()">
+                        <img src="../Image-Video/Coder/Gmail-Coder.jpg" class="img-coder" id="gmail-img">
+                        <span class="text">Gmail</span>
+                    </div>
+                    <div class="div" id="khung-ytb-vtmusic" onclick="VTMusic()">
+                        <img src="../Image-Video/Coder/VTMuisc.png" class="img-coder" id="vtmuisc-img">
+                        <span class="text">VTMusic Studio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

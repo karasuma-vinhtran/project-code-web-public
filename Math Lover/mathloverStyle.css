@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+* {
+    outline: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: auto;
+}
+
+
+/* .div {
+    border: 1px solid red;
+} */
+
+#inp-lover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    /*  Ko đổi */
+    opacity: 1;
+    /*  Ko đổi */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+#div-title-inp {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.text-inp-1 {
+    color: #ff0000;
+    font-family: DynaPuff;
+    font-size: 60px;
+}
+
+.text-inp-2 {
+    color: #ff0000;
+    font-family: Montserrat;
+}
+
+#divTotal-inp-name {
+    width: 70%;
+    margin-top: 80px;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 500;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+
+
+/* reset input */
+
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+
+#div-btn-math {
+    width: 70%;
+    margin-top: 40px;
+    text-align: end;
+    transition: 1s;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-3 {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-3:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-3:hover:before {
+    height: 100%;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
+
+.btn-3 span:hover {
+    color: rgba(2, 126, 251, 1);
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3 span:hover:before {
+    height: 100%;
+}
+
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+#div-math-lover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: 1s;
+}
+
+#div-head {
+    width: 100%;
+}
+
+.icon-close {
+    font-size: 50px;
+    color: red;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.text {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#number-math {
+    color: #03fc7f;
+    text-decoration-line: underline;
+}
+
+#div-thong-diep {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#text-thong-diep {
+    color: #03befc;
+}
+
+@media screen and (max-width: 2000px) {
+    #inp-lover {
+        background: url(https://i.ibb.co/7WwZVt1/zyro-image.png);
+        background-size: cover;
+    }
+    .form__field {
+        font-family: inherit;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid #ffffff;
+        outline: 0;
+        font-size: 1.3rem;
+        color: #00ffee;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+    }
+    .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: #ffffff;
+    }
+    #math-lover {
+        width: 94%;
+        height: 85%;
+        /* margin-top: -100px; */
+        margin-top: 80px;
+        border-radius: 20px;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #inp-lover {
+        background: url(https://i.ibb.co/5FPW4xY/903931587-min.png);
+        background-size: cover;
+    }
+    .form__field {
+        font-family: inherit;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid #ff6ee7;
+        outline: 0;
+        font-size: 1.3rem;
+        color: #fff;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+    }
+    .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: #ff6ee7;
+    }
+    #math-lover {
+        width: 94%;
+        height: 75%;
+        /* margin-top: -100px; */
+        margin-top: 150px;
+        border-radius: 20px;
+        background-color: #11998e;
+        background-size: cover;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+    }
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: aquamarine;
+}
+
+.div-display-loading {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    opacity: 1;
+    transition: 1s;
+}
+
+.div-total-web {
+    position: relative;
+    z-index: 1;
+}
+
+.loader {
+    box-sizing: border-box;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+}
+
+.loader:after,
+.loader:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FF3D00;
+    animation: spin 1s linear infinite;
+    transform-origin: 0px 100%;
+}
+
+.loader:before {
+    transform-origin: 0 50%;
+    background: #fff;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* .div {
+    border: 3px solid red;
+} */
+
+#head-web {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(55, 0, 255);
+    border-radius: 0px 0px 50px 50px;
+    /*top right bottom left*/
+}
+
+#div-text {
+    margin: 0px 10px 0px 10px;
+    width: 90%;
+    text-align: center;
+}
+
+#text-head-web {
+    color: #ffffff;
+    font-family: Edu VIC WA NT Beginner;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#back-img {
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#back-img:hover {
+    height: 70px;
+    transition: 0.5s;
+}
+
+#khung-fb,
+#khung-discord,
+#khung-gmail,
+#khung-ytb-vtmusic {
+    height: 150px;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    color: rgb(255, 0, 255);
+    font-weight: bold;
+    border: 5px solid rgb(255, 131, 131);
+    background-color: rgb(0, 162, 255);
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px 5px #ffffff;
+}
+
+#khung-fb:hover,
+#khung-discord:hover,
+#khung-gmail:hover,
+#khung-ytb-vtmusic:hover {
+    width: 500px;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.img-coder {
+    height: 85%;
+    width: 100%;
+}
+
+.text {
+    font-size: 110%;
+}
+
+@media screen and (max-width: 2000px) {
+    #khung-app {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        width: 100%;
+    }
+    #khung {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #khung-app {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        width: 100%;
+    }
+    #khung {
+        margin-top: 0px;
+    }
+}

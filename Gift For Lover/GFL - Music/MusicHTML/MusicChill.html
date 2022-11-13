@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../Image-Video/Icon/icon-web-music.png">
+    <link href="../MusicStylesChung.css" rel="stylesheet">
+    <script language="javascript" src="../MusicJSChung.js"></script>
+    <script language="javascript" src="../MusicJS/MusicJSChill.js"></script>
+    <title>Music Chill - Gift For Lover</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="div" id="head-web">
+        <img src="../../Image-Video/back-img.png" class="back-img" onclick="backHome()">
+        <div class="div" id="khung-logo-head">
+            <img src="../../Image-Video/Music/logo.png" id="logo-head">
+            <span id="text-head">Music Chill</span>
+        </div>
+        <div class="div" id="kieu-music-head">
+            <select class="kieu-music" id="kieu-music" onchange="kieuMusic()">
+                <option class="bang-kieu-music" value="Chill" selected="selected">Chill</option>
+                <option class="bang-kieu-music" value="Nonstop">Nonstop</option>
+                <option class="bang-kieu-music" value="Nightcore">Nightcore</option>
+                <option class="bang-kieu-music" value="Anime">Anime</option>
+            </select>
+        </div>
+    </div>
+    <audio id="music" controls hidden>
+        <source src="">
+    </audio>
+    <div class="div" id="body-web">
+        <div class="div" id="list-music">
+            <ul type="none" class="ul-list-music"></ul>
+        </div>
+        <div class="div" id="div-1">
+            <div class="div" id="khung-text-name">
+                <h1 id="text-name-song"></h1>
+            </div>
+            <div class="div" id="div-2"></div>
+        </div>
+    </div>
+    <div class="div" id="controls">
+        <div class="div" id="khung-control">
+            <div class="div" id="time-line">
+                <input title="Range Music" type="range" class="display-scroll" id="display-scroll" onchange="handleChangeBar()">
+                <div class="div" id="khung-timeline">
+                    <div class="div" id="timeline-displaytime">⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢</div>
+                    <div class="div" id="timeline-total">⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢</div>
+                </div>
+            </div>
+            <div class="div" id="controls-play-pause">
+                <div class="btn-control-list" id="btn-forward">
+                    <ion-icon name="play-skip-back" class="text-control"></ion-icon>
+                </div>
+                <div class="btn-control-list" id="btn-play-pause">
+                    <ion-icon name="play" class="text-control" id="play"></ion-icon>
+                </div>
+                <div class="btn-control-list" id="btn-skip">
+                    <ion-icon name="play-skip-forward" class="text-control"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="div" id="control-music">
+            <div class="btn-control-list" id="back5s-music" onclick="Back5s_Music()">
+                <ion-icon name="play-back" class="text-control-music"></ion-icon>
+            </div>
+            <select class="time-chuyen" id="time-chuyen">
+                <option class="bang-time-chuyen" value="5">Tua 5s</option>
+                <option class="bang-time-chuyen" value="10">Tua 10s</option>
+                <option class="bang-time-chuyen" value="15">Tua 15s</option>
+                <option class="bang-time-chuyen" value="20">Tua 20s</option>
+                <option class="bang-time-chuyen" value="30">Tua 30s</option>
+            </select>
+            <div class="btn-control-list" id="skip5s-music" onclick="Skip5s_Music()">
+                <ion-icon name="play-forward" class="text-control-music"></ion-icon>
+            </div>
+            <div class="btn-control-list" id="refresh-music" onclick="Refresh_Music()">
+                <ion-icon name="refresh" class="text-control-music"></ion-icon>
+            </div>
+            <div class="btn-control-list" id="random-music" onclick="Random_Music()">
+                <ion-icon name="shuffle" class="text-control-music"></ion-icon>
+            </div>
+            <div class="div-control-volume" id="volume-music"></div>
+        </div>
+    </div>
+</body>
+
+</html>

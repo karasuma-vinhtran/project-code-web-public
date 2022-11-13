@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+/* ============================================= */
+
+* {
+    outline: none;
+}
+
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url(./Image-Video/Input/bg-input.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.div-display-loading {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    opacity: 1;
+    transition: 1s;
+}
+
+.div-total-web {
+    position: relative;
+    z-index: 1;
+}
+
+#btn-check {
+    margin-left: 10px;
+    height: 40px;
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat", cursive;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-size: 54px 204px;
+    border-radius: 2em;
+    border: 2px solid rgb(0, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#btn-check:focus {
+    color: #ff00dd;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    background-position: 0.75em bottom;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#btn-check:focus {
+    background-position: 2em -4em;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.loader {
+    box-sizing: border-box;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+}
+
+.loader:after,
+.loader:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FF3D00;
+    animation: spin 1s linear infinite;
+    transform-origin: 0px 100%;
+}
+
+.loader:before {
+    transform-origin: 0 50%;
+    background: #fff;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ================================= */
+
+
+/* #head-web,
+#khung-login,
+#khung-trong-login,
+#end-web,
+#text-end {
+    border: 2px solid red;
+} */
+
+#head-web {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+.text {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.inp-pass {
+    height: 30px;
+    width: 150px;
+    border: 5px hidden;
+    border-bottom: 5px solid greenyellow;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.inp-pass:focus {
+    height: 30px;
+    width: 250px;
+    border: 5px none;
+    border-bottom: 5px solid rgb(255, 0, 170);
+    transition: 0.5s;
+}
+
+#name-coder {
+    font-family: "Montserrat", cursive;
+    font-size: 15px;
+    color: #eeff00;
+}
+
+@media screen and (max-width: 2000px) {
+    #head-web {
+        text-align: start;
+    }
+    #logo {
+        height: 150px;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+    #khung-login {
+        margin-top: 120px;
+    }
+    #khung-trong-login {
+        width: 80%;
+        margin-left: 15%;
+    }
+    #name-ny {
+        font-size: 80px;
+        font-family: 'Smooch', cursive;
+    }
+    #gift-title {
+        font-size: 20px;
+        font-family: 'Lobster', cursive;
+    }
+    #body-web {
+        border: 2px solid rgba(0, 0, 0, 0);
+        height: 70%;
+        width: 100%;
+        text-align: center;
+    }
+    #text-end {
+        margin-top: 60px;
+        margin-right: 10px;
+    }
+    #end-web {
+        height: 100px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        text-align: end;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #head-web {
+        text-align: center;
+    }
+    #logo {
+        height: 150px;
+        margin-top: -30px;
+        margin-left: -10px;
+    }
+    #khung-login {
+        margin-top: 200px;
+    }
+    #khung-trong-login {
+        width: 100%;
+        margin-left: -1%;
+    }
+    #name-ny {
+        font-size: 50px;
+        font-family: 'Smooch', cursive;
+    }
+    #body-web {
+        border: 2px solid rgba(0, 0, 0, 0);
+        height: 70%;
+        width: 100%;
+        text-align: center;
+    }
+    #text-end {
+        margin-top: 60px;
+        margin-right: 10px;
+    }
+    #end-web {
+        height: 100px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        text-align: end;
+    }
+}

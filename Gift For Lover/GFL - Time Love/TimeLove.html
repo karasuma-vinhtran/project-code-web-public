@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Image-Video/Icon/icon-web-love-time.png">
+    <link href="./TimeLoveStyles.css" rel="stylesheet">
+    <script language="javascript" src="./TimeLoveJS.js"></script>
+    <title>Time Love - Gift For Lover</title>
+    <style>
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <script type="text/javascript">
+        //<=!=[=C=D=A=T=A=[
+
+        function contentprotector() {
+            return false;
+        }
+
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton === 2) || (eventbutton === 3))
+                return false;
+        }
+        document.oncontextmenu = contentprotector;
+        document.onmouseup = contentprotector;
+        var isCtrl = false;
+        window.onkeyup = function(e) {
+            if (e.which === 17)
+                isCtrl = false;
+        }
+        window.onkeydown = function(e) {
+            if (e.which === 17)
+                isCtrl = true;
+            if (((e.which === 85) || (e.which === 65) || (e.which === 88) || (e.which === 67) || (e.which === 86) || (e.which === 83)) && isCtrl === true) {
+                return false;
+            }
+        }
+        isCtrl = false;
+        document.ondragstart = contentprotector;
+        //]=]=>
+    </script>
+</head>
+
+<body id="body">
+    <div class="div-display-loading" id="display-loading">
+        <span class="loader"></span>
+    </div>
+    <div class="div-total-web" id="total-web">
+        <div class="div" id="head-web">
+            <div class="div" id="div-text">
+                <h1 id="text-head-web">Time Love</h1>
+            </div>
+        </div>
+        <div class="div" id="body-web">
+            <div class="div" id="khung">
+                <div class="div" id="khung-time-love">
+                    <div class="div" id="Ebe-tL">
+                        <img class="img" id="Ebe-img" src="../Image-Video/Home/Ebe-Crop.png" onclick="Ebe_linkFB()">
+                        <h1 class="Name" id="Name-Ebe"></h1>
+                        <p class="DOB" id="DateOfBirth-Ebe"></p>
+                        <p class="Address" id="Address-Ebe"></p>
+                    </div>
+                    <div class="div" id="Text-tL">
+                        <span class="text-tL" style="font-size: 20px; margin: 10px;">Đã Yêu Nhau</span>
+                        <span class="text-tL" id="date-tL"></span>
+                    </div>
+                    <div class="div" id="Abe-tL">
+                        <img class="img" id="Abe-img" src="../Image-Video/Home/Abe-Crop.png" onclick="Abe_linkFB()">
+                        <h1 class="Name" id="Name-Abe"></h1>
+                        <p class="DOB" id="DateOfBirth-Abe"></p>
+                        <p class="Address" id="Address-Abe"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

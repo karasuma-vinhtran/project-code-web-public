@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@100&display=swap');
+
+/* .div {
+    border: 3px solid red;
+} */
+
+* {
+    outline: none;
+}
+
+.li-list-music,
+.btn {
+    cursor: pointer;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ff9900;
+    width: 100%;
+}
+
+#head-web {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: #000000;
+}
+
+.back-img {
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.back-img:hover {
+    height: 60px;
+    transition: 0.5s;
+}
+
+#khung-logo-head {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+}
+
+#kieu-music-head {
+    width: 50%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+}
+
+#text-head {
+    color: #ffffff;
+    font-family: Dancing Script;
+    font-size: 45px;
+}
+
+#logo-head {
+    height: 70px;
+}
+
+.kieu-music {
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    width: 120px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ff0000;
+    transition: 0.5s;
+}
+
+.kieu-music:focus {
+    color: #ffffff;
+    background-color: #00ff84;
+    transition: 0.5s;
+}
+
+.bang-kieu-music {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00ff84;
+}
+
+#body-web {
+    height: 460px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+#list-music {
+    height: 100%;
+    width: 25%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #00ccff;
+}
+
+#list-music::-webkit-scrollbar {
+    width: 10px;
+}
+
+#list-music::-webkit-scrollbar-track {
+    background-color: #00ccff;
+}
+
+#list-music::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(-45deg, #6a5af9, #d66efd);
+    border-radius: 50px;
+}
+
+.ul-list-music {
+    margin: 0px;
+    padding: 0px;
+}
+
+.li-list-music {
+    border: 1px solid #ffffff;
+    height: 50px;
+    background: -webkit-linear-gradient(to right, rgb(255, 0, 255), #00eeff);
+    background: linear-gradient(to right, rgb(255, 0, 255), #00eeff);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+#div-1 {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: rgba(62, 55, 102, 1);
+    transition: 0.5s;
+    position: relative;
+}
+
+#div-2 {
+    height: 80%;
+    width: 100%;
+    margin-top: 100px;
+    transition: 0.5s;
+    /*background-image: url(https://thumbs.gfycat.com/AcceptableGreedyDutchsmoushond-size_restricted.gif);*/
+    background-size: 900px;
+    opacity: 0;
+}
+
+#text-name-song {
+    font-family: Josefin Sans;
+    font-size: 70px;
+    margin-top: 80px;
+    margin-left: 20px;
+    color: rgba(0, 255, 26, 1);
+    position: absolute;
+}
+
+#controls {
+    height: 100px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: #ff9900;
+}
+
+#khung-control,
+#control-music {
+    height: 85%;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+#time-line {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+#khung-timeline {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+#timeline-displaytime,
+#timeline-total {
+    height: 20px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#timeline-displaytime {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+.display-scroll {
+    -webkit-appearance: none;
+    width: 99%;
+    background: transparent;
+}
+
+.display-scroll::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: #000000;
+    border-radius: 10px;
+    border: 0.2px solid #000000;
+}
+
+.display-scroll::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid #00ff3c;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: #00ff3c;
+    cursor: pointer;
+    margin-top: -7px;
+}
+
+#timeline-total {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+}
+
+#controls-play-pause {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.btn-control-list {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.text-control {
+    font-size: 20px;
+}
+
+.time-chuyen {
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+
+.time-chuyen:focus {
+    background-color: #0084ff;
+    transition: 0.5s;
+}
+
+.bang-time-chuyen {
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    background-color: #00eeff;
+}
+
+#control-music {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-end;
+}

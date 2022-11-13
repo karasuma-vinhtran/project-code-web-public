@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+        }
+        
+        #heart-video {
+            height: 111%;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+    <video id="heart-video" autoplay loop onclick="Close()">
+        <source src="https://bun.filedit.ch/YEUpGUWUrscXdXJtqPNO.mp4" type="video/mp4">
+    </video>
+    <script>
+        setTimeout(function() {
+            alert("Ấn Vào Video Để Chọn Những Option")
+        }, 3000)
+
+        function Close() {
+            var question = prompt("Nhập Option Mà Bạn Muốn?\nEsc -> Về Trang Đăng Nhập\nDown -> Tải Video Này Xuống", "Down");
+            if (question == "Esc") {
+                window.location.href = "./index.html"
+            } else if (question == "Down") {
+                window.location.assign("https://drive.google.com/file/d/1e9wbk2npxriwUrhBZttX4yJnqyLuOrvv/view?usp=sharing")
+            }
+        }
+    </script>
+</body>
+
+</html>

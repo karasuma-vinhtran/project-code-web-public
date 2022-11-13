@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img5.thuthuatphanmem.vn/uploads/2021/07/17/icon-trai-tim-tinh-yeu-dep_054626342.png">
+    <link href="./mathloverStyle.css" rel="stylesheet">
+    <script language="javascript" src="./mathloverJS.js"></script>
+    <title>Math Love</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="div" id="inp-lover">
+        <div class="div" id="div-title-inp">
+            <span class="text-inp-1" id="text-inp-1">Math Lover</span><br>
+            <p class="text-inp-2" id="text-inp-2">Nơi Tính % Phù Hợp<br>Và Nhận Lời Chúc Cho Tình Yêu</p>
+        </div>
+        <div class="div" id="divTotal-inp-name">
+            <div class="div" id="div-inp-name-me">
+                <label class="label" for="inp-nameMe"><div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="name" id='inp-nameMe' required />
+                    <label for="inp-nameMe" class="form__label">Họ & Tên Bạn:</label>
+            </div>
+        </div><br>
+        <div class="div" id="div-inp-name-you">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="name" id='inp-nameYou' required />
+                <label for="inp-nameYou" class="form__label">Họ & Tên Người Ấy:</label>
+            </div>
+        </div>
+    </div>
+    <div class="div" id="div-btn-math">
+        <button class="custom-btn btn-3" id="btn-math" onclick="OnClick()"><span>Tính</span></button>
+    </div>
+    </div>
+    <div class="div" id="div-math-lover">
+        <div class="div" id="math-lover">
+            <div class="div" id="div-head">
+                <ion-icon name="close-outline" class="icon-close" id="icon-close" onclick="CloseTab()"></ion-icon>
+            </div>
+            <div class="div" id="div-phan-tram">
+                <div class="div" id="div-loader-phan-tram">
+                </div>
+                <div class="div" id="div-number-math">
+                    <h1 class="text" id="title-number-math">Phần Trăm Cặp Đôi</h1>
+                    <h1 class="text" id="number-math">00%</h1>
+                </div>
+            </div>
+            <div class="div" id="div-underline"></div>
+            <div class="div" id="divTotal-thong-diep">
+                <div class="div" id="div-loader-thong-diep">
+
+                </div>
+                <div class="div" id="div-thong-diep">
+                    <h4 class="text">Lời Chúc Muốn Gửi Đến Bạn</h4>
+                    <p class="text" id="text-thong-diep"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Relief Game</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script language="javascript" src="./js.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="div div-display-game">
+        <div class="div div-display-menu w3-display-container">
+            <h1 class="name-game">Game Giảm Stress</h1>
+            <div class="div div-btn">
+                <button id="play-new" class="btn btn-play-new">New</button>
+                <button id="play-continue" class="btn btn-play-continue">Continue</button>
+            </div>
+            <div id="fb-user-coder" class="div div-coder w3-display-bottomright">
+                <ion-icon name="person-sharp" class="icon-coder"></ion-icon>
+            </div>
+        </div>
+        <div class="div div-display-start">
+            <div class="div head-game w3-display-container">
+                <div class="div div-back w3-display-left">
+                    <ion-icon name="chevron-back-circle" class="icon icon-back"></ion-icon>
+                </div>
+                <span class="text-point">Point</span>
+                <span class="text-help">( 1 click = 1 point )</span>
+                <h1 class="number-point">0</h1>
+                <div class="div div-reset w3-display-right">
+                    <ion-icon name="refresh-circle" class="icon icon-reset"></ion-icon>
+                </div>
+            </div>
+            <div class="div display-game w3-display-container">
+                <span class="emoji-game emoji-1 w3-display-middle">🍀</span>
+                <span class="emoji-game emoji-2 w3-display-middle">🍑</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Image-Video/Icon/icon-web-input.png">
+    <link href="./LoginStyles.css" rel="stylesheet">
+    <script language="javascript" src="./LoginJS.js"></script>
+    <title>Login - Gift For Lover</title>
+    <style>
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <script type="text/javascript">
+        //<=!=[=C=D=A=T=A=[
+
+        function contentprotector() {
+            return false;
+        }
+
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton === 2) || (eventbutton === 3))
+                return false;
+        }
+        document.oncontextmenu = contentprotector;
+        document.onmouseup = contentprotector;
+        var isCtrl = false;
+        window.onkeyup = function(e) {
+            if (e.which === 17)
+                isCtrl = false;
+        }
+        window.onkeydown = function(e) {
+            if (e.which === 17)
+                isCtrl = true;
+            if (((e.which === 85) || (e.which === 65) || (e.which === 88) || (e.which === 67) || (e.which === 86) || (e.which === 83)) && isCtrl === true) {
+                return false;
+            }
+        }
+        isCtrl = false;
+        document.ondragstart = contentprotector;
+        //]=]=>
+    </script>
+</head>
+
+<body>
+    <div class="div-display-loading" id="display-loading">
+        <span class="loader"></span>
+    </div>
+    <div class="div-total-web" id="total-web">
+        <div id="head-web">
+            <img id="logo" src="https://i.ibb.co/sCDQkYc/logo.png" title="Ấn Vào Thử Đi. Có Điều Bất Ngờ" onclick="hrefLogo()"><br>
+        </div>
+        <div id="body-web">
+            <div id="khung-login">
+                <div id="khung-trong-login">
+                    <span name="Tên Ny" id="name-ny" class="text"></span><br>
+                    <p name="Lời Muốn Nói" id="gift-title" class="text"></p>
+                    <span id="ket_qua"></span><br>
+                    <input type="password" class="inp-pass" id="pass-check" placeholder="Nhập Pass" onkeypress="return runScript(event)">
+                    <div>
+                        <input value="Vào ⇒⇒⇒" type="button" id="btn-check" onclick="checkPass()" title="Nhập Pass Đi Rồi Ấn">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="end-web">
+            <div id="text-end">
+                <a id="name-coder" href="https://www.facebook.com/vinh.tran.karasuma1412/" title="Ấn Vào Để Chuyển Đến Facebook Người Soạn Code">
+                    Coder Fb: Vinh Trần(Karasuma)
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

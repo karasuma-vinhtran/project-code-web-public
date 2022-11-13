@@ -1,0 +1,196 @@
+/* 
+. = class
+# = id 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #00ffaa; */
+    background-image: url("https://img5.thuthuatphanmem.vn/uploads/2021/09/22/anh-background-vu-tru_095511483.jpg");
+    background-size: 2000px;
+}
+
+.div-display-loading {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    opacity: 1;
+    transition: 1s;
+}
+
+.div-total-web {
+    position: relative;
+    z-index: 1;
+}
+
+.loader {
+    box-sizing: border-box;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+}
+
+.loader:after,
+.loader:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FF3D00;
+    animation: spin 1s linear infinite;
+    transform-origin: 0px 100%;
+}
+
+.loader:before {
+    transform-origin: 0 50%;
+    background: #fff;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* .div {
+    border: 2px solid red;
+} */
+
+#head-web {
+    height: 100px;
+    border-bottom: 4px solid #ffffff;
+    border-radius: 0px 0px 30px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: rgba(255, 147, 237, 0.7);
+}
+
+#back-img {
+    height: 50px;
+    cursor: pointer;
+}
+
+#text-head-web {
+    font-family: Lobster;
+    font-size: 40px;
+    font-weight: bold;
+    color: #e82020;
+}
+
+.text-tL {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#Ebe-tL,
+#Abe-tL,
+#Text-tL {
+    margin: 10px;
+    background-color: rgba(255, 147, 237, 0.8);
+    box-shadow: 5px 5px 5px 5px #303030;
+}
+
+#Ebe-tL,
+#Abe-tL {
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Name {
+    font-family: The Nautigal;
+    font-size: 50px;
+    color: #ff6600;
+}
+
+.DOB {
+    font-family: Oswald;
+    font-size: 20px;
+    color: #cc00ff;
+}
+
+.Address {
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ff7b;
+}
+
+#khung-time-love {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 2000px) {
+    #div-text {
+        width: 90%;
+    }
+    .img {
+        height: 150px;
+        border: 5px solid #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #date-tL {
+        font-size: 50px;
+    }
+    #Text-tL {
+        width: 150px;
+        border-radius: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #div-text {
+        width: 70%;
+    }
+    .img {
+        height: 100px;
+        border: 5px solid #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #date-tL {
+        font-size: 30px;
+    }
+    #Text-tL {
+        width: 150px;
+        border-radius: 30px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+}
